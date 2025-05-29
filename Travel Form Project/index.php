@@ -1,6 +1,14 @@
 <?php
     $insert=false;
-    if(isset($_POST['name'])) {
+    if (
+    isset($_POST['name'], $_POST['gender'], $_POST['age'], $_POST['email'], $_POST['tel'], $_POST['desc']) &&
+    !empty(trim($_POST['name'])) &&
+    !empty(trim($_POST['gender'])) &&
+    !empty(trim($_POST['age'])) &&
+    !empty(trim($_POST['email'])) &&
+    !empty(trim($_POST['tel'])) &&
+    !empty(trim($_POST['desc']))
+) {
 
         // Set conenction variables
         $server = "localhost";
