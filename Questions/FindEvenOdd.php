@@ -6,8 +6,9 @@
     <title>Find Even/Odd</title>
 </head>
 <body>
-    <h2>Find the number is even or odd</h2>
-    <form action="05_FindEvenOdd.php" method="post" >
+    <h1>Find the number is even or odd</h1>
+
+    <form method="post" >
         <label for="number">Enter a number to check the number is ODD or EVEN: </label>
         <input type="number" name="number" id="number" placeholder="Enter number">
         <br>
